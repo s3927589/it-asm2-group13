@@ -1,4 +1,116 @@
+@font-face {
+  font-family: main_font;
+  src: url(./fonts/main_font.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: main_font_s;
+  src: url(./fonts/main_font2.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: main_font_s;
+  src: url(./fonts/main_font2_bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: main_font;
+  src: url(./fonts//main_font_bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: main_font;
+  src: url(./fonts//main_font_super_bold.ttf);
+  font-weight: bold;
+}
+
+body {
+	font-family: main_font;
+}
+
 .center {
 	width: 100%;
 	text-align: center;
+}
+
+.nav-wrapper {
+	height: 120px;
+	padding: 10px;
+}
+
+.nav-wrapper ul {
+	margin-top: 15px;
+	font-family: main_font_s;
+}
+
+.large-container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.super-bold {
+	font-weight: bold;
+}
+
+.my-btn {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	transition: 0.2s ease all;
+}
+
+.light-btn {
+	transition: 0.2s ease all;
+}
+
+.light-btn:hover {
+	filter: brightness(85%);
+}
+
+.dark-btn {
+	transition: 0.2s ease all;
+}
+
+.dark-btn:hover {
+	filter: brightness(200%);
+}
+
+.line-2 {
+	line-height: 2rem;
+}
+
+footer {
+	background-color: #212121;
+	text-align: center;
+	padding: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+.margin-100 {
+	margin: 100px;
+}
+
+.owl-carousel {
+	margin-left: 0;
+}
+
+.inline {
+	display: inline;
+}
+
+.sidenav-trigger {
+	padding-top: 17px;
 }
