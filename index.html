@@ -18,15 +18,15 @@
 	</script>
 	<nav class="nav-wrapper grey darken-4">
 		<div class="large-container">
-			<img class="brand-logo" src='./images/logo.png' width="110" alt="logo"/>
-			<a href="#" data-target="mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+			<a href="./index.html"><img class="brand-logo" src='./images/logo.png' width="110" alt="logo"/></a>
+			<a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href='./index.html'>HOME</a></li>
 				<li><a href='./about.html'>ABOUT</a></li>
 				<li><a href='./blog.html'>BLOG</a></li>
 			</ul>
 
-			<ul class="sidenav" id="mobile">
+			<ul class="sidenav" id="mobile-nav">
 				<li><a href='./index.html'>HOME</a></li>
 				<li><a href='./about.html'>ABOUT</a></li>
 				<li><a href='./blog.html'>BLOG</a></li>
@@ -54,6 +54,7 @@
 	</div>
 
 	<div class="home-info-dark">
+		<div class="home-info-dark-img minhanh-bg hide-on-large-only"></div>
 		<div class="home-info-dark-content">
 			<div class="home-info-dark-subcontent">
 				<h3
@@ -81,7 +82,7 @@
 					>Read More</a>
 			</div>
 		</div>
-		<div class="home-info-dark-img minhanh-bg">
+		<div class="home-info-dark-img minhanh-bg hide-on-med-and-down">
 		</div>
 	</div>
 
@@ -119,6 +120,7 @@
 	</div>
 
 	<div class="home-info-dark">
+		<div class="home-info-dark-img khang-bg hide-on-large-only"></div>
 		<div class="home-info-dark-content">
 			<div class="home-info-dark-subcontent">
 				<h3
@@ -145,7 +147,7 @@
 					>Read More</a>
 			</div>
 		</div>
-		<div class="home-info-dark-img khang-bg">
+		<div class="home-info-dark-img khang-bg hide-on-med-and-down">
 		</div>
 	</div>
 
@@ -212,11 +214,10 @@
 		<p>©2021 by Cyber Warriors</p>
 	</footer>
 
+	<script src="./js/materialize.min.js"></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			var elems = document.querySelectorAll('.sidenav');
-			var instances = M.Sidenav.init(elems, options);
-		});
+		var elem = document.querySelector('.sidenav');
+		var instance = new M.Sidenav(elem);
 	</script>
 </body>
 </html>

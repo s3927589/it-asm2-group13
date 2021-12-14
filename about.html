@@ -19,7 +19,7 @@
 	</script>
 	<nav class="nav-wrapper grey darken-4">
 		<div class="large-container">
-			<img class="brand-logo" src='./images/logo.png' width="110" alt="logo"/>
+			<a href="./index.html"><img class="brand-logo" src='./images/logo.png' width="110" alt="logo"/></a>
 			<a href="#" data-target="mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href='./index.html'>HOME</a></li>
@@ -142,20 +142,19 @@
 		</div>
 	</div>
 
-	<div class="about-test-container row">
+	<div class="about-test-container row" id="about-tests">
 		<div class="about-test-section col s12 m6 l3"
 			data-aos="fade-up"
 			data-aos-duration="1000">
 			<img class="circle-img" src="./images/duong-ava.JPG" width="150" />
 
-			<p>My personality tests</p>
 			<p>The Myers-Briggs Test</p>
 			<p>Learning Style Test</p>
 			<p>The Big Five Test</p>
 
 			<h6>Pham Thi Thuy Duong</h6>
 
-			<a href="#" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
+			<a href="./test_duong.html" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
 		</div>
 
 		<div class="about-test-section col s12 m6 l3"
@@ -163,14 +162,13 @@
 			data-aos-duration="1200">
 			<img class="circle-img" src="./images/minhanh-ava.jpeg" width="150" />
 
-			<p>My personality tests</p>
 			<p>The Myers-Briggs Test</p>
 			<p>Learning Style Test</p>
 			<p>The Big Five Test</p>
 
 			<h6>Nguyen Minh Anh</h6>
 
-			<a href="#" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
+			<a href="./test_minhanh.html" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
 		</div>
 
 		<div class="about-test-section col s12 m6 l3"
@@ -178,14 +176,13 @@
 			data-aos-duration="1400">
 			<img class="circle-img" src="./images/khang_square.jpg" width="150" />
 
-			<p>My personality tests</p>
 			<p>The Myers-Briggs Test</p>
 			<p>Learning Style Test</p>
 			<p>The Big Five Test</p>
 
 			<h6>Nguyen Minh Khang</h6>
 
-			<a href="#" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
+			<a href="./test_khang.html" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
 		</div>
 
 		<div class="about-test-section col s12 m6 l3"
@@ -193,14 +190,13 @@
 			data-aos-duration="1600">
 			<img class="circle-img" src="./images/binh_square2.jpg" width="150" />
 
-			<p>My personality tests</p>
 			<p>The Myers-Briggs Test</p>
 			<p>Learning Style Test</p>
 			<p>The Big Five Test</p>
 
 			<h6>Nguyen Huu Thanh Binh</h6>
 
-			<a href="#" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
+			<a href="./test_binh.html" class="my-btn dark-btn grey darken-4 white-text">Read More</a>
 		</div>
 	</div>
 
@@ -223,10 +219,8 @@
 			});
 		});
 
-		document.addEventListener('DOMContentLoaded', function() {
-			var elems = document.querySelectorAll('.sidenav');
-			var instances = M.Sidenav.init(elems, options);
-		});
+		var elem = document.querySelector('.sidenav');
+		var instance = new M.Sidenav(elem);
 	</script>
 </body>
 </html>

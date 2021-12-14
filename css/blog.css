@@ -94,3 +94,11 @@
 .icon:hover {
   color: #039be5;
 }
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.no-margin {
+	margin-bottom: 0;
+}
