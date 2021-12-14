@@ -141,3 +141,12 @@ footer {
 	font-style: italic !important;
 }
 
+@media only screen and (max-width: 500px) {
+.nav-wrapper {
+	height: 200px;
+	padding-top: 50px;
+}
+.nav-wrapper i {
+	font-size: 3rem !important;
+}
+}
